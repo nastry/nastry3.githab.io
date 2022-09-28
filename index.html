@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link href="/style.css" rel="stylesheet" />
+  <title>задание 2</title>
+</head>
+<body>
+  <header>
+    <a href="/">
+    <img alt="..." id="logo" src="https://sinst.fwdcdn.com/img/newImg/sinoptic-logo-ny-2016.png" />
+    </a>
+    <h1>Это сайт</h1>
+    </header>
+    <div class="cont">
+    <nav class="nav">
+      <a href="#">Эта страница</a>
+      <a target="_blank" href="https://www.wildberries.ru/"
+        >Интернет-магазин</a
+      >
+      <a target="_blank" href="https://ya.ru/"
+        >Яндекс</a
+      >
+
+    </nav>
+    
+  <div class="weba">
+    <ol>
+      <li><a href="http://example.com">гиперссылка на example.com</a> </li>
+      <li><a href="https://example.com">гиперссылка на example.com c протоколом</a></li>
+      <li><a href="ftp://examle.com/catalog/file.txt">ссылку на файл на сервере FTP без авторизации</a></li>
+      <li><a href="ftp://login.password@examle.com/catalog/file.txt">ссылку на файл на сервере FTP с авторизацией</a></li>
+      <li><a href="https://example.com/catalog#foto">ссылку на фрагмент страницы некоторого сайта</a></li>
+      <li><a href="#foto">ссылку на фрагмент текущей страницы</a></li>
+      <li><a href="http://example?par1=p1&par2=p2">ссылку с двумя параметрами в URL</a></li>
+      <li>
+        "список ссылок основной навигации сайта с подписями title"
+      <ul>
+        <li><a>1список</a></li>
+        <li><a>2список</a></li>
+        <li><a>3список</a></li>
+      </ul></li>
+      <li> <a title="ничего">Ссылка без href</a></li>
+      <li> <a href="#">ссылку с пустым href</a></li>
+      <li><a href="http://kubsu.ru" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a> </li>
+      <li><a href="http://example.com" rel="nofollow"><!--noindex-->Ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+      <li><p>"контекстная"
+        <a href="http://example.com">ссылка</a>
+        в тексте абзаца
+      <li><a href="https://ecoportal.info/" ><img src="https://ecoportal.info/wp-content/uploads/2020/10/golosemennie-rasteniya-544x467.jpg" alt="описание"></a></li>
+      <li>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</li>
+      <li><a href="foto">относительную на страницу в текущем каталоге (дляhttps://ex.com/galery/foto)</a></li>
+      <li><a href="foto/dogs">относительную на страницу в каталоге foto (дляhttps://ex.com/galery/foto/dogs)</a></li>
+      <li><a href="../foto">относительную на страницу в каталоге уровнем выше текущегo(для https://ex.com/galery/foto/dogs)</a></li>
+      <li><a href="../../dogs">относительную на страницу в каталоге двумя уровнями выше; (для https://ex.com/galery/foto/dogs</a></li>
+      <li><a href="/"> сокращенную на главную</a></li>
+      <li><a href="galery/foto">сокращенную ссылку на внутреннюю (для https://ex.com/galery/foto)</a>
+      </li>
+    </ol>
+  </div>
+
+
+<table class="table">
+  <tbody>
+<tr>
+   <td colspan="3">3 ячейки вместе</td>
+  <th>q</th>
+  <th>e</th>
+</tr>
+<tr>
+  <th>f</th>
+  <th>j</th>
+  <th>i</th>
+  <th>p</th>
+  <th>u</th>
+</tr>
+<tr>
+  <th>m</th>
+  <td colspan="4">4 ячейки вместе</td>
+</tr>
+<tr>
+  <th>n</th>
+  <th>w</th>
+  <th>x</th>
+  <th>z</th>
+  <th>c</th>
+</tr>
+<tr>
+  <th>a</th>
+  <th>b</th>
+  <th>v</th>
+  <th>t</th>
+  <th>k</th>
+</tr>
+  </tbody>
+</table>
+
+
+  <h2>Форма</h2>
+  <form action="/" method="POST" id="forma">
+    <label>
+      Имя:<br>
+      <input name="name" placeholder="введите ваше имя" />
+    </label>
+    <br>
+    <label>
+      e-mail:
+      <br>
+      <input name="mail" type="email" placeholder="введите вашу почту" />
+    </label>
+    <br>
+    <label>
+      Дата рождения:
+      <br>
+      <input name="field-date" value="2020-07-18" type="date" />
+    </label>
+    <br>
+    <label>
+      Ваш пол:
+      <br>
+      <input type="radio" name="radio-group-1" value="Значение1" checked />
+      Мужской
+    </label>
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение2" />
+      Женский
+    </label>
+    <br>
+    <label>
+      Количество конечностей:
+      <br>
+      <input type="radio" name="radio-group-1" value="Значение1" checked />
+      1
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение1" />
+      2
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение1" />
+      3
+    </label>
+    <br />
+    <label>
+      <input type="radio" name="radio-group-1" value="Значение1" />
+      4
+    </label>
+    <br />
+    Сверхспособности<br/>
+    <label>
+      <select name="power" multiple="multiple">
+        <option value="Значение1" selected>умение читать мысли</option>
+        <option value="Значение2">умение летать</option>
+        <option value="Значение3">умение вылечивать раны</option>
+      </select>
+    </label>
+    <br />
+    <label id="some">
+      Биография:
+      <br />
+      <textarea name="bio" placeholder="о себе"></textarea>
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" name="check-1" checked />
+      с контрактом ознакомлен (а)
+    </label>
+    <br />
+    <input type="submit" value="Отправить" />
+  </form> 
+</div>
+  <footer>
+    (с) Рыженкова Анастасия 2022
+  </footer>
+</body>
+</html>
